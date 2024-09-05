@@ -1,13 +1,74 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.datepicker {
+  width: 350px;
+  height: 240px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+  position: relative;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {
+  max-width: 100%;
+  height: 44px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.month-select {
+  width: 44px;
+  height: 44px;
+  background-color: white;
+
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.month-select:hover {
+  background-color: #e6e6e6;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px;
+}
+
+.day-button {
+  width: 45px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.day-button:hover {
+  background-color: #e6e6e6;
+}
+
+.today {
+  background-color: #ffff76;
+}
+
+.active {
+  background-color: #006edc;
+  color: white;
+}
+
+.non-current-month {
+  color: rgb(163, 163, 163);
+  cursor: not-allowed;
 }
