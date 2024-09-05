@@ -17,4 +17,7 @@
    使用 `npm test` 命令運行測試套件，並在終端中查看結果。
 
 5. **專案打包**:
-   使用 `npm build` 打包專案，打包後的專案會心生成一資料夾build。
+   使用 `npm build` 打包專案，打包後的專案會新生成一資料夾build。
+
+6. **專案部署**:
+   使用 `npm deploy` 部署專案，會自動部署到github上[gh-pages]branch上。
